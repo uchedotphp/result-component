@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(./variables.css);
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.wrapper {
+  background-color: var(--cobalt-blue);
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 550px;
+  width: 100%;
+}
+
+.wrapper > section {
+  padding-block: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.wrapper .result-panel > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.wrapper .result-panel .inner-circle {
+    background-color: red;
+    text-align: center;
+    border-radius: 50%;
+    padding: 3.14345rem 3rem;
+}
+
+.wrapper .result-panel .inner-circle .score {
+    font-size: var(--large-font);
+}
+
+.wrapper .summary-panel {
+}
